@@ -4,12 +4,8 @@
   "description": "eslint config for 21/23 JS projects",
   "main": "index.js",
   "scripts": {
-    "test": "eslint --report-unused-disable-directives --config \".eslintrc.json\" ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
+    "test": "eslint --report-unused-disable-directives --config \".eslintrc.json\" .",
+    "prepush": "npm test"
   },
   "repository": {
     "type": "git",
