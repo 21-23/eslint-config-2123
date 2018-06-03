@@ -1,19 +1,22 @@
 {
   "name": "eslint-config-2123",
   "version": "0.0.1",
-  "description": "",
+  "description": "eslint config for 21/23 JS projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint --report-unused-disable-directives --config \".eslintrc.json\" ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/21-23/eslint-config-2123.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "21-23",
+  "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/21-23/eslint-config-2123/issues"
   },
-  "homepage": "https://github.com/21-23/eslint-config-2123#readme"
+  "homepage": "https://github.com/21-23/eslint-config-2123#readme",
+  "devDependencies": {
+    "eslint": "4.19.1"
+  }
 }
