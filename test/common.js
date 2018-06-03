@@ -32,3 +32,17 @@ let iterator = 0;
 iterator++;
 iterator--;
 defaultCase(iterator);
+
+// no-param-reassign, no-unused-vars
+function params(paramA, paramB) {
+    paramA.prop = true;
+}
+params();
+
+// brace-style
+if (iterator > 100) { return; }
+if (iterator > 90) {
+    iterator++;
+} else if (iterator > 80) {
+    iterator--;
+}
